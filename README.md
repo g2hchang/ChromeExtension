@@ -30,17 +30,6 @@ The TrackerTracker also presents a statistics page that has three sections:<br/>
 
 
 
-##Who built it: Team 5
-
-###Members:
-
-- Marc de Niverville
-- Adam Kasztenny
-- Doga Ister
-- Albert(Yixiao) Qin
-- Allan(Hanbin) Chang
-- Angel Misevski
-
 
 
 
