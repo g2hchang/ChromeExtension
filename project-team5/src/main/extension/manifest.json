@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+
+  "name": "TrackerTracker",
+  "version": "0.2",
+  "description": "Warns the user about private data being leaked.",
+  "icons": { "128": "img/warning.png" },
+  "web_accessible_resources": ["*.png"] ,
+
+
+  "permissions": [
+      "management", "cookies", "tabs", "http://*/*", "https://*/*", "storage", "<all_urls>", "webRequest", "privacy"
+    ],
+    
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "img/warning.png",
+    "default_popup": "popup.html"
+  },
+   
+   "background": {
+       "persistent": true, 
+       "scripts": ["scripts/jquery-1.12.0.min.js", 
+                   "scripts/controller/lessons.js", 
+                   "scripts/controller/messagepasser.js", 
+                   "scripts/controller/messagePassingQueue.js", 
+                   "scripts/controller/lessonController.js", 
+                   "scripts/background/cookies.js", 
+                   "scripts/background/OSInfo.js", 
+                   "scripts/background/cookieScriptStatistics.js", 
+                   "scripts/background/chromePrivacyControls.js", 
+                   "scripts/background/IP_location.js", 
+                   "scripts/controller/lessonMessageController.js"]
+   },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["stylesheets/overlay.css", "stylesheets/views.css", "stylesheets/style.css"],
+      "js": ["scripts/jquery-1.12.0.min.js", "scripts/views/fingerprinting.js", "scripts/views/infotab.js", "scripts/views/banner.js", "scripts/views/view.js", "scripts/views/socialMediaHighlighter.js"]
+    }
+  ]
+}

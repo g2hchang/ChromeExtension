@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "What are we going to call our extension??",
+  "version": "0.1",
+  "description": "Warns the user about private data being leaked.",
+  "icons": { "128": "img/warning.png" },
+
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "img/warning.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["stylesheets/overlay.css"],
+      "js": ["scripts/jquery-1.12.0.min.js", "scripts/experiments/testAddToDOM.js"]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Martinez Rivera J., Medina Ramos L. and Chinaei A. (2015). Non-consent Data Retrieval While using Web or Email Services. In Proceedings of 4th International Conference on Data Management Technologies and Applications, ISBN 978-989-758-103-8, pages 316-325. DOI: 10.5220/0005549703160325

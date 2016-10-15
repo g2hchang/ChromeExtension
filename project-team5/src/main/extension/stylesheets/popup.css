@@ -1,0 +1,44 @@
+body {
+	width: 15em;
+	font-size: 13pt;
+	color: #444;
+	box-sizing: border-box;
+}
+
+#logo{
+	margin-right : 10px;
+	align:"middle";
+}
+
+h2 {
+	color: #555;
+	width: 100%;
+	text-align: center;
+	display: inline;
+}
+
+body div {
+	margin: 1em 0;
+}
+
+body input[type="checkbox"] {
+	margin-bottom: 2em;
+	width: 2em;
+}
+
+body label {
+	display: inline-block;
+	width: 12em;
+	vertical-align: top;
+}
+
+body button {
+	background-color: #256;
+	font: 14pt Helvetica;
+	color: white;
+	padding: 0.5em;
+	margin-top: 1em;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+}

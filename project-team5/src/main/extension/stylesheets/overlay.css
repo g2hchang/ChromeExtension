@@ -1,0 +1,11 @@
+#infoheader {
+    font-size: 100px;
+    font-style: bold;
+    color: blue;
+}
+
+.funky {
+	background-color: yellow;
+	position: relative;
+	z-index: 1000;
+}

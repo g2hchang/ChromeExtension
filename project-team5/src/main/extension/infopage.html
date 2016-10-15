@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/infopage.css">
+</head>
+
+<body>
+
+  <!-- Header content. Really shouldn't be just "hello" -->
+  <header id="header">
+    <h1> TrackerTracker </h1>
+  </header>
+
+  <div class="selector">
+    <div class="selector-content">
+      <ul class="tabs">
+        <li class="active" id="history">History</li>
+        <li id="graphs">Graphs</li>
+        <li id="info">Info</li>
+      </ul>     
+    </div>
+
+  </div>
+
+  <div class="content">
+    <!-- Tabs for selecting which view to show. -->
+
+
+    <!-- Dropdown list that contains all third parties encountered. -->
+    <div class="dropdown">
+      <select id="select-third-party">
+        <option>Select View</option>
+      </select>
+    </div>
+
+    <!-- div to hold the table of browsing history -->
+    <div class="history-view">
+      <table id="history-table"> </table> 
+    </div>
+
+    <!-- div to hold graphs we want to show. starts hidden -->
+    <div class="graph-view" style="display: none;">
+      <div class="graphs">
+        
+        <div class="hist">
+          <p> Number of sites visited per day </p> 
+          <ul id="hist-select">
+            <li id="total" class="active">Total</li>
+            <li id="by-day-of-week">By day of week</li>
+          </ul>
+          <canvas id="histogram"></canvas>  
+        </div>
+        <div class="tp-graph">
+          <div id="thirdPartyGraph">
+            <svg id="svg-graph"></svg> 
+          </div> 
+        </div>
+
+      </div>
+    </div>
+
+    <div class="info-view" style="display: none;">
+      
+      <div id="cookie-entry" class="entry"> 
+        <p>Cookie!</p>
+        
+        <div id="cookie-panel" class="panel"> 
+          <p>What are cookies? </br>
+          Cookies are small files that are stored on a computer. The purpose is to hold some amount of data that is specific to a client and website. They are accessible from the server and the client side.</br>
+          e.g. Jill visits NewYorkTimes.com to read news articles. When she visits the website for the first time, NewYorkTimes will store a cookie on Jill's browser. Every time Jill clicks on a link to read an article on NewYorkTimes, her browser sends the cookie back to the server hosting NewYorkTimes. Since this cookie serves as Jill's unique identifier, NewYorkTimes knows what articles Jill is interested in reading."
+          </p>
+           <img src = "./img/cookieman.png" height="400" width="400"></br>
+        </div>
+      </div>
+
+      <div id="script-entry" class="entry">
+        <p>Script!</p> 
+	
+          <div id="script-panel" class="panel">
+            <p> What is script? </br>
+              Scripts operates in response to click request that is made by user. Generally companies that make huge amount of money from advertisement uses script tracking like Google, Facebook etc.</br>
+              e.g. Bob signed into Facebook and visited a website that contains a Facebook like button (Social media tracking part gives some information about buttons like this.), Facebook knows that Bob visited that website and Bob’s identity because Facebook stored a cookie when he logged in.
+            </p>
+            <img src = "./img/script.png" height="440" width="440"></br>
+
+          </div>
+      </div>
+
+      <div id="fingerprint-entry" class="entry">
+        <p> Fingerprinting! </p>
+        <div id="fingerprint-panel" class="panel">
+          <p>What is Fingerprinting? <br/>
+          Fingerprinting(is also called digital fingerprint) your machine works the same as getting your fingerprint. Your machine's fingerprint is almost unique among billions of devices, and can be used to recognize it when you are browsing the web, at every page that you 'touch'.</br>
+          e.g. Eve visits a website, and it immediately takes her device fingerprint.  This way the website can find Eve's browsing habits or they can assess statistics based on traffic flow.
+        </p>
+          <img src = "./img/digitalFingerprint.png" height="440" width="440"></br>
+
+        </div>
+      </div>
+
+      <div id="geolocation-entry" class="entry">
+        <p>Geo-Location!</p> 
+  
+        <div id="geolocation-panel" class="panel">
+          <p>What is Geo-Location? </br>
+          Geo-Location tracking is the identification of the real geographic location of someone or something. It even includes the longtitude and the latitude of the user.</br>
+          e.g. Josh decided to buy a car and visits websites such as autotrade or cargurus. To find cars in his location he allowed those websites to find his geo-location, by clicking “allow” on the pop up that appeared on Google Chrome. Then he visits Facebook and sees that Facebook shows him advertisements on his home page about cars that are for sale and close to his location. The reason Facebook can show the cars in his location is that he allowed the geo-location on the websites he visited and tracked his location and preferences. 
+        </p>
+          <img src = "./img/geoLocation.png" height="240" width="240"></br>
+        </div>
+      </div>
+
+      <div id="socialmedia-entry" class="entry">
+        <p>Social Media!</p> 
+  
+        <div id="socialmedia-panel" class="panel">
+          <p>What is social media tracking? </br>
+          Social media tracking is an active monitoring of social media channels such as Facebook, Twitter, wikis, blogs, media sharing, forums, message boards etc.</br>
+          e.g. Dave was waiting at the airport and posted a complaint on Twitter and added a # with the company name, flight company wrote under his Tweet and asked for the flight number to give extra information. With this way the Flight company tracked him on social media.
+        </p>
+          <img src = "./img/social_media.png" height="400" width="400"></br>
+        </div>
+      </div>
+    </div>  
+
+
+  </div>
+  <script type="text/javascript" src="./scripts/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="./scripts/moment.min.js"></script>
+  <script type="text/javascript" src="./scripts/Chart.min.js"></script>
+  <script type="text/javascript" src="./scripts/d3.min.js"></script>
+  <script type="text/javascript" src="./scripts/infopage/infopage.js"></script>
+  <script type="text/javascript" src="./scripts/infopage/data_processing.js"></script>
+
+</body>
+</html>

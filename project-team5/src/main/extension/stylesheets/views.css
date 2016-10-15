@@ -1,0 +1,78 @@
+.allbanner {
+	background-color: #3e4c70;
+	color: #94dfff;
+	opacity: .9;
+	box-sizing: initial;
+	font-size: 14pt;
+}
+
+.banner_button {
+	margin: 10px;
+	padding: 5px;
+	background-color: #e7e7e7;
+	color: 	#000000;
+}
+
+#temp_banner {
+	text-align: center;
+	padding-top: 0px;
+	border-bottom: solid 2px #aaa;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 0px;
+	z-index: 160000;
+	transition:height .5s ease-in;
+}
+
+
+#bottom_banner {
+	text-align: center;
+	padding-top: 0px;
+	border-top: solid 2px #aaa;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 0px;
+	z-index: 160000;
+	transition:height .5s ease-in;
+}
+
+
+#tab_notifier {
+	position: fixed;
+	top: 0;
+	left: 20px;
+	width: 100px;
+	height: 40px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 25px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	z-index: 160020;
+}
+
+#tab_update {
+	font-size: 16px;
+	color: #c20003;
+	float: right;
+	padding-top: 5px;
+}
+
+#tab_content {
+	font-size: 14px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 160010;
+	padding-top: 0px;
+	padding-left: 180px;
+	overflow-y: scroll;
+	transition:height .5s ease-in;
+}
+
+#tab_icon {
+	height: 30px;
+	width: 30px;
+}
